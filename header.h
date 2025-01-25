@@ -1,0 +1,70 @@
+/* ************************************************************************** */
+/*                                                                            */
+/*                                                        :::      ::::::::   */
+/*   header.h                                           :+:      :+:    :+:   */
+/*                                                    +:+ +:+         +:+     */
+/*   By: aychikhi <aychikhi@student.42.fr>          +#+  +:+       +#+        */
+/*                                                +#+#+#+#+#+   +#+           */
+/*   Created: 2025/01/04 11:20:11 by aychikhi          #+#    #+#             */
+/*   Updated: 2025/01/25 16:12:34 by aychikhi         ###   ########.fr       */
+/*                                                                            */
+/* ************************************************************************** */
+
+#ifndef HEADER_H
+# define HEADER_H
+
+# include <stdarg.h>
+# include <stdio.h>
+# include <stdlib.h>
+# include <unistd.h>
+
+typedef struct s_list
+{
+	long			n;
+	int				index;
+	struct s_list	*next;
+
+}					t_list;
+
+void	sa(t_list **a);
+void	sb(t_list **b);
+void	ra(t_list **a);
+void	rb(t_list **b);
+void	rra(t_list **a);
+void	rrb(t_list **b);
+void	two(t_list **a);
+void	tree(t_list **a);
+void	error_mess(void);
+int		ft_isdigit(int c);
+void	swap(t_list	**lst);
+void	set_up(char **str);
+void	rotate(t_list **lst);
+int		is_sorted(t_list **a);
+void	rrotate(t_list **lst);
+int		ft_lstsize(t_list *lst);
+void	get_index(t_list *lst);
+t_list	*ft_lstlast(t_list *lst);
+long	ft_atoi(const char *str);
+t_list	*ft_lstnew(long content);
+void	ft_lstclear(t_list **lst);
+void	pa(t_list **a, t_list **b);
+void	pb(t_list **b, t_list **a);
+void	ss(t_list **a, t_list **b);
+void	rr(t_list **a, t_list **b);
+char	*ft_strdup(const char *s1);
+size_t	ft_strlen(const char *str);
+void	rrr(t_list **a, t_list **b);
+void	five(t_list **a, t_list **b);
+void	is_dup(int num, t_list	*lst);
+void	ft_putstr_fd(char *s, int fd);
+void	ft_putchar_fd(char c, int fd);
+void	ft_putendl_fd(char *s, int fd);
+char	*ft_strjoin(char *s1, char *s2);
+char	**ft_split(char const *s, char c);
+void	push(t_list **lst_a, t_list **lst_b);
+void	four(t_list **a, t_list **b, int flag);
+int		ft_strcmp(const char *s1, const char *s2);
+void	ft_lstadd_back(t_list **lst, t_list *new);
+void	ft_lstadd_front(t_list **lst, t_list *new);
+
+#endif
