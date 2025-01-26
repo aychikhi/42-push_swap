@@ -6,14 +6,18 @@
 /*   By: aychikhi <aychikhi@student.42.fr>          +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2025/01/04 11:20:11 by aychikhi          #+#    #+#             */
-/*   Updated: 2025/01/26 11:32:13 by aychikhi         ###   ########.fr       */
+/*   Updated: 2025/01/26 20:31:01 by aychikhi         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
 #ifndef HEADER_H
 # define HEADER_H
 
-# include <stdarg.h>
+# ifndef BUFFER_SIZE
+#  define BUFFER_SIZE 3
+# endif
+
+
 # include <stdio.h>
 # include <stdlib.h>
 # include <unistd.h>
@@ -68,5 +72,13 @@ void	four(t_list **a, t_list **b, int flag);
 int		ft_strcmp(const char *s1, const char *s2);
 void	ft_lstadd_back(t_list **lst, t_list *new);
 void	ft_lstadd_front(t_list **lst, t_list *new);
+void	sort_fun(t_list **a, t_list **b, char *move);
+char	*ft_join(char *s1, char *s2);
+size_t	ft_len(const char *str);
+char	*ft_dup(const char *s1);
+char	*get_next_line(int fd);
+void read_moves(t_list **a, t_list **b);
+char	*ft_strchr(const char *s, int c);
+char	*ft_substr(const char *s, unsigned int start, size_t len);
 
 #endif
