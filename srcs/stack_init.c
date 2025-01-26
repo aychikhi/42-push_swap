@@ -6,7 +6,7 @@
 /*   By: aychikhi <aychikhi@student.42.fr>          +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2025/01/22 15:25:54 by aychikhi          #+#    #+#             */
-/*   Updated: 2025/01/25 15:35:29 by aychikhi         ###   ########.fr       */
+/*   Updated: 2025/01/26 13:24:18 by aychikhi         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -22,6 +22,8 @@ static void	check(t_list **a, t_list **b)
 		two(a);
 	else if (ft_lstsize(*a) == 1)
 		return ;
+	else
+		rsort_stack(a, b);
 }
 
 int	is_sorted(t_list **a)

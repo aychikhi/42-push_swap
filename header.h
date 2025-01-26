@@ -6,7 +6,7 @@
 /*   By: aychikhi <aychikhi@student.42.fr>          +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2025/01/04 11:20:11 by aychikhi          #+#    #+#             */
-/*   Updated: 2025/01/25 16:12:34 by aychikhi         ###   ########.fr       */
+/*   Updated: 2025/01/26 11:32:13 by aychikhi         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -61,6 +61,8 @@ void	ft_putchar_fd(char c, int fd);
 void	ft_putendl_fd(char *s, int fd);
 char	*ft_strjoin(char *s1, char *s2);
 char	**ft_split(char const *s, char c);
+void	sort_stack(t_list **a, t_list **b);
+void	rsort_stack(t_list **a, t_list **b);
 void	push(t_list **lst_a, t_list **lst_b);
 void	four(t_list **a, t_list **b, int flag);
 int		ft_strcmp(const char *s1, const char *s2);
