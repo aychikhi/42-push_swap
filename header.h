@@ -6,7 +6,7 @@
 /*   By: aychikhi <aychikhi@student.42.fr>          +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2025/01/04 11:20:11 by aychikhi          #+#    #+#             */
-/*   Updated: 2025/01/27 17:50:11 by aychikhi         ###   ########.fr       */
+/*   Updated: 2025/01/27 18:31:46 by aychikhi         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -17,7 +17,6 @@
 #  define BUFFER_SIZE 3
 # endif
 
-# include <stdio.h>
 # include <stdlib.h>
 # include <unistd.h>
 
