@@ -6,7 +6,7 @@
 /*   By: aychikhi <aychikhi@student.42.fr>          +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2025/01/26 18:01:11 by aychikhi          #+#    #+#             */
-/*   Updated: 2025/01/26 20:36:43 by aychikhi         ###   ########.fr       */
+/*   Updated: 2025/01/27 12:29:23 by aychikhi         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -22,7 +22,7 @@ static void	free_fun(t_list **a, t_list **b, char *str)
 {
 	free(str);
 	ft_lstclear(a);
-	ft_lstclear(b);	
+	ft_lstclear(b);
 	error_mess();
 }
 
@@ -73,7 +73,7 @@ void	sort_fun(t_list **a, t_list **b, char *move)
 	else if (!ft_strcmp(move, "rrb\n"))
 		rrb(b);
 	else if (!ft_strcmp(move, "rrr\n"))
-		rrr(a, b); 
+		rrr(a, b);
 	else if (!ft_strcmp(move, "pa\n"))
 		pa(a, b);
 	else if (!ft_strcmp(move, "pb\n"))
@@ -83,12 +83,12 @@ void	sort_fun(t_list **a, t_list **b, char *move)
 	free(move);
 }
 
-void read_moves(t_list **a, t_list **b)
+void	read_moves(t_list **a, t_list **b)
 {
 	char	*move;
 
 	move = get_next_line(0);
-	while(move)
+	while (move)
 	{
 		sort_fun(a, b, move);
 		move = get_next_line(0);

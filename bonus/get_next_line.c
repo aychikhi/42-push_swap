@@ -6,7 +6,7 @@
 /*   By: aychikhi <aychikhi@student.42.fr>          +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2024/11/24 15:23:46 by aychikhi          #+#    #+#             */
-/*   Updated: 2025/01/26 19:53:02 by aychikhi         ###   ########.fr       */
+/*   Updated: 2025/01/27 12:33:30 by aychikhi         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -21,7 +21,7 @@ char	*ft_strchr(const char *s, int c)
 	if (!s)
 		return (NULL);
 	str = (char *)s;
-	len = ft_len(str);
+	len = ft_strlen(str);
 	i = 0;
 	while (i <= len)
 	{
@@ -45,7 +45,7 @@ static char	*read_line(int fd, char *buffer, char *remainder)
 		if (bytes_read <= 0)
 			break ;
 		buffer[bytes_read] = '\0';
-		temp = ft_join(remainder, buffer);
+		temp = ft_strjoin(remainder, buffer);
 		free(remainder);
 		remainder = temp;
 		if (ft_strchr(remainder, '\n') || bytes_read < BUFFER_SIZE)
@@ -64,7 +64,7 @@ static char	*extract_line(char **remainder)
 	if (newline_pos)
 	{
 		line = ft_substr(*remainder, 0, newline_pos - *remainder + 1);
-		temp = ft_dup(newline_pos + 1);
+		temp = ft_strdup(newline_pos + 1);
 		free(*remainder);
 		*remainder = temp;
 	}
@@ -72,7 +72,7 @@ static char	*extract_line(char **remainder)
 	{
 		if (!**remainder)
 			return (free(*remainder), *remainder = NULL, NULL);
-		line = ft_dup(*remainder);
+		line = ft_strdup(*remainder);
 		free(*remainder);
 		*remainder = NULL;
 	}

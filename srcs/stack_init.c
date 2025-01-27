@@ -6,7 +6,7 @@
 /*   By: aychikhi <aychikhi@student.42.fr>          +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2025/01/22 15:25:54 by aychikhi          #+#    #+#             */
-/*   Updated: 2025/01/26 13:24:18 by aychikhi         ###   ########.fr       */
+/*   Updated: 2025/01/27 12:20:30 by aychikhi         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -61,12 +61,10 @@ void	set_up(char **str)
 			stack[1] = NULL;
 		}
 		else
-		{
-			is_dup(ft_atoi(str[i]), stack[0]);
 			ft_lstadd_back(&stack[0], ft_lstnew(ft_atoi(str[i])));
-		}
 		i++;
 	}
+	is_dup(stack[0]);
 	get_index(stack[0]);
 	check(&stack[0], &stack[1]);
 	ft_lstclear(&stack[0]);

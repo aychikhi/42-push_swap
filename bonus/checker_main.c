@@ -6,7 +6,7 @@
 /*   By: aychikhi <aychikhi@student.42.fr>          +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2025/01/26 17:03:49 by aychikhi          #+#    #+#             */
-/*   Updated: 2025/01/26 20:31:18 by aychikhi         ###   ########.fr       */
+/*   Updated: 2025/01/27 12:51:41 by aychikhi         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -56,47 +56,50 @@ static void	convert_and_check(char **str)
 	i = 0;
 	while (str[i])
 	{
-		if ((ft_strlen(str[i]) >= 10) && ((ft_atoi(str[i]) > 2147483647)
+		if ((ft_len(str[i]) >= 10) && ((ft_atoi(str[i]) > 2147483647)
 				|| (ft_atoi(str[i]) < -2147483648)))
 			error_mess();
 		i++;
 	}
 }
 
-static void	free_fun(char **str)
+static char	**join_arg(char **arg, char **src)
 {
 	int	i;
 
 	i = 0;
-	while (str[i])
+	while (src[i])
 	{
-		free(str[i]);
+		arg[i] = src[i + 1];
 		i++;
 	}
-	free(str);
+	arg[i] = NULL;
+	return (arg);
 }
 
 int	main(int ac, char **av)
 {
 	int		i;
 	char	**str;
-	char	*ptr;
+	int		l;
 
-	i = 0;
 	if (ac == 1)
 		return (0);
+	i = -1;
+	l = 0;
 	while (i++ < ac - 1)
 	{
 		is_empty(av[i]);
 		if (!av[i][0])
 			error_mess();
-		ptr = ft_strjoin(ptr, av[i]);
-		ptr = ft_strjoin(ptr, " ");
+		if (check_space(av[i]))
+			l += count_word2(av[i]);
 	}
-	str = ft_split(ptr, ' ');
-	free(ptr);
+	l += ac - 1;
+	str = malloc(sizeof(char *) * ac);
+	join_arg(str, av);
 	convert_and_check(str);
 	set_up(str);
-	free_fun(str);
+	free(str);
 	return (0);
 }

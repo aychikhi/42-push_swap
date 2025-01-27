@@ -6,13 +6,13 @@
 /*   By: aychikhi <aychikhi@student.42.fr>          +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2024/11/29 06:26:54 by aychikhi          #+#    #+#             */
-/*   Updated: 2025/01/26 20:01:57 by aychikhi         ###   ########.fr       */
+/*   Updated: 2025/01/27 12:33:03 by aychikhi         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
 #include "../header.h"
 
-size_t	ft_len(const char *str)
+size_t	ft_strlen(const char *str)
 {
 	size_t	i;
 
@@ -22,7 +22,7 @@ size_t	ft_len(const char *str)
 	return (i);
 }
 
-char	*ft_dup(const char *s1)
+char	*ft_strdup(const char *s1)
 {
 	int		i;
 	int		l;
@@ -31,7 +31,7 @@ char	*ft_dup(const char *s1)
 	if (!s1)
 		return (NULL);
 	i = 0;
-	l = ft_len(s1);
+	l = ft_strlen(s1);
 	ptr = malloc((l + 1) * sizeof(char));
 	if (!ptr)
 		return (NULL);
@@ -59,7 +59,7 @@ static void	ft_strcpy(char *dest, const char *src, size_t len)
 	}
 }
 
-char	*ft_join(char *s1, char *s2)
+char	*ft_strjoin(char *s1, char *s2)
 {
 	size_t	len1;
 	size_t	len2;
@@ -67,8 +67,8 @@ char	*ft_join(char *s1, char *s2)
 
 	len1 = 0;
 	len2 = 0;
-	len1 = ft_len(s1);
-	len2 = ft_len(s2);
+	len1 = ft_strlen(s1);
+	len2 = ft_strlen(s2);
 	result = malloc(len1 + len2 + 1);
 	if (!result)
 		return (NULL);
@@ -85,10 +85,10 @@ char	*ft_substr(const char *s, unsigned int start, size_t len)
 
 	if (!s)
 		return (NULL);
-	if (start > ft_len(s))
-		return (ft_dup(""));
-	if (ft_len(s) - start < len)
-		len = ft_len(s) - start;
+	if (start > ft_strlen(s))
+		return (ft_strdup(""));
+	if (ft_strlen(s) - start < len)
+		len = ft_strlen(s) - start;
 	str = malloc((len + 1) * sizeof(char));
 	if (!str)
 		return (NULL);

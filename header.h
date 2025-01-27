@@ -6,7 +6,7 @@
 /*   By: aychikhi <aychikhi@student.42.fr>          +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2025/01/04 11:20:11 by aychikhi          #+#    #+#             */
-/*   Updated: 2025/01/26 20:31:01 by aychikhi         ###   ########.fr       */
+/*   Updated: 2025/01/27 12:37:35 by aychikhi         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -16,7 +16,6 @@
 # ifndef BUFFER_SIZE
 #  define BUFFER_SIZE 3
 # endif
-
 
 # include <stdio.h>
 # include <stdlib.h>
@@ -45,8 +44,13 @@ void	set_up(char **str);
 void	rotate(t_list **lst);
 int		is_sorted(t_list **a);
 void	rrotate(t_list **lst);
-int		ft_lstsize(t_list *lst);
+void	is_dup(t_list	*lst);
+int		count_word2(char *str);
+int		check_space(char *str);
 void	get_index(t_list *lst);
+char	*get_next_line(int fd);
+int		ft_lstsize(t_list *lst);
+size_t	ft_len(const char *str);
 t_list	*ft_lstlast(t_list *lst);
 long	ft_atoi(const char *str);
 t_list	*ft_lstnew(long content);
@@ -59,12 +63,13 @@ char	*ft_strdup(const char *s1);
 size_t	ft_strlen(const char *str);
 void	rrr(t_list **a, t_list **b);
 void	five(t_list **a, t_list **b);
-void	is_dup(int num, t_list	*lst);
 void	ft_putstr_fd(char *s, int fd);
 void	ft_putchar_fd(char c, int fd);
 void	ft_putendl_fd(char *s, int fd);
 char	*ft_strjoin(char *s1, char *s2);
+char	*ft_strchr(const char *s, int c);
 char	**ft_split(char const *s, char c);
+void	read_moves(t_list **a, t_list **b);
 void	sort_stack(t_list **a, t_list **b);
 void	rsort_stack(t_list **a, t_list **b);
 void	push(t_list **lst_a, t_list **lst_b);
@@ -73,12 +78,6 @@ int		ft_strcmp(const char *s1, const char *s2);
 void	ft_lstadd_back(t_list **lst, t_list *new);
 void	ft_lstadd_front(t_list **lst, t_list *new);
 void	sort_fun(t_list **a, t_list **b, char *move);
-char	*ft_join(char *s1, char *s2);
-size_t	ft_len(const char *str);
-char	*ft_dup(const char *s1);
-char	*get_next_line(int fd);
-void read_moves(t_list **a, t_list **b);
-char	*ft_strchr(const char *s, int c);
 char	*ft_substr(const char *s, unsigned int start, size_t len);
 
 #endif

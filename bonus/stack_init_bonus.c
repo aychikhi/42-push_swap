@@ -6,7 +6,7 @@
 /*   By: aychikhi <aychikhi@student.42.fr>          +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2025/01/26 17:20:32 by aychikhi          #+#    #+#             */
-/*   Updated: 2025/01/26 20:36:04 by aychikhi         ###   ########.fr       */
+/*   Updated: 2025/01/27 12:28:08 by aychikhi         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -34,10 +34,10 @@ int	is_sorted(t_list **a)
 static void	free2(t_list **a, t_list **b)
 {
 	ft_lstclear(a);
-	ft_lstclear(b);	
+	ft_lstclear(b);
 }
 
-static void	check_is_sorted(t_list	**stack)
+static void	check_is_sorted(t_list **stack)
 {
 	if (!is_sorted(stack))
 		ft_putendl_fd("KO", 1);
@@ -45,12 +45,20 @@ static void	check_is_sorted(t_list	**stack)
 		ft_putendl_fd("OK", 1);
 }
 
-void	is_dup(int num, t_list *lst)
+void	is_dup(t_list *lst)
 {
+	t_list	*tmp;
+
+	tmp = lst;
 	while (lst)
 	{
-		if (num == lst->n)
-			error_mess();
+		tmp = lst->next;
+		while (tmp)
+		{
+			if (lst->n == tmp->n)
+				error_mess();
+			tmp = tmp->next;
+		}
 		lst = lst->next;
 	}
 }
@@ -71,12 +79,10 @@ void	set_up(char **str)
 			stack[1] = NULL;
 		}
 		else
-		{
-			is_dup(ft_atoi(str[i]), stack[0]);
 			ft_lstadd_back(&stack[0], ft_lstnew(ft_atoi(str[i])));
-		}
 		i++;
 	}
+	is_dup(stack[0]);
 	get_index(stack[0]);
 	read_moves(&stack[0], &stack[1]);
 	check_is_sorted(&stack[0]);

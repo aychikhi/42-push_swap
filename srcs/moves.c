@@ -6,7 +6,7 @@
 /*   By: aychikhi <aychikhi@student.42.fr>          +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2025/01/21 15:01:06 by aychikhi          #+#    #+#             */
-/*   Updated: 2025/01/25 15:34:51 by aychikhi         ###   ########.fr       */
+/*   Updated: 2025/01/27 12:29:11 by aychikhi         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -73,18 +73,21 @@ void	push(t_list **lst_a, t_list **lst_b)
 	t_list	*tmp;
 
 	tmp = NULL;
-	if (!*lst_a)
+	if (lst_b && *lst_b)
 	{
-		tmp = (*lst_b)->next;
-		*lst_a = *lst_b;
-		(*lst_a)->next = NULL;
-		*lst_b = tmp;
-	}
-	else
-	{
-		tmp = (*lst_b)->next;
-		(*lst_b)->next = *lst_a;
-		*lst_a = *lst_b;
-		*lst_b = tmp;
+		if (!*lst_a)
+		{
+			tmp = (*lst_b)->next;
+			*lst_a = *lst_b;
+			(*lst_a)->next = NULL;
+			*lst_b = tmp;
+		}
+		else
+		{
+			tmp = (*lst_b)->next;
+			(*lst_b)->next = *lst_a;
+			*lst_a = *lst_b;
+			*lst_b = tmp;
+		}
 	}
 }
