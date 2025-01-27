@@ -6,7 +6,7 @@
 /*   By: aychikhi <aychikhi@student.42.fr>          +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2025/01/26 17:20:32 by aychikhi          #+#    #+#             */
-/*   Updated: 2025/01/27 12:28:08 by aychikhi         ###   ########.fr       */
+/*   Updated: 2025/01/27 17:41:21 by aychikhi         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -73,6 +73,7 @@ void	set_up(char **str)
 	stack[1] = NULL;
 	while (str[i])
 	{
+		convert_and_check(str[i]);
 		if (!stack[0] && !stack[1])
 		{
 			stack[0] = ft_lstnew(ft_atoi(str[i]));

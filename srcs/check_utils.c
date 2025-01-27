@@ -1,49 +1,16 @@
 /* ************************************************************************** */
 /*                                                                            */
 /*                                                        :::      ::::::::   */
-/*   bonus_utils.c                                      :+:      :+:    :+:   */
+/*   check_utils.c                                      :+:      :+:    :+:   */
 /*                                                    +:+ +:+         +:+     */
 /*   By: aychikhi <aychikhi@student.42.fr>          +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
-/*   Created: 2025/01/27 12:22:42 by aychikhi          #+#    #+#             */
-/*   Updated: 2025/01/27 17:52:01 by aychikhi         ###   ########.fr       */
+/*   Created: 2025/01/27 17:48:37 by aychikhi          #+#    #+#             */
+/*   Updated: 2025/01/27 18:24:41 by aychikhi         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
 #include "../header.h"
-
-int	count_word2(char *str)
-{
-	int	i;
-	int	c;
-
-	i = 0;
-	c = 0;
-	while (str[i])
-	{
-		while (str[i] == ' ' || str[i] == '\n' || str[i] == '\t')
-			i++;
-		if (str[i])
-			c++;
-		while (str[i] && str[i] != ' ' && str[i] != '\n' && str[i] != '\t')
-			i++;
-	}
-	return (c);
-}
-
-int	check_space(char *str)
-{
-	int	i;
-
-	i = 0;
-	while (str[i])
-	{
-		if (str[i] <= 32)
-			return (1);
-		i++;
-	}
-	return (0);
-}
 
 void	is_empty(char *str)
 {
@@ -64,6 +31,38 @@ void	convert_and_check(char *str)
 	if ((ft_len(str) >= 10) && 
 		((ft_atoi(str) > 2147483647) || (ft_atoi(str) < -2147483648)))
 		error_mess();
+}
+
+int	check_space(char *str)
+{
+	int	i;
+
+	i = 0;
+	while (str[i])
+	{
+		if (str[i] <= 32)
+			return (1);
+		i++;
+	}
+	return (0);
+}
+
+void	is_dup(t_list *lst)
+{
+	t_list	*tmp;
+
+	tmp = lst;
+	while (lst)
+	{
+		tmp = lst->next;
+		while (tmp)
+		{
+			if (lst->n == tmp->n)
+				error_mess();
+			tmp = tmp->next;
+		}
+		lst = lst->next;
+	}
 }
 
 int	counter(char *ptr)
