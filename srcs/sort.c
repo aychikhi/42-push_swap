@@ -36,7 +36,7 @@ void	five(t_list **a, t_list **b)
 
 	size = ft_lstsize(*a) / 2;
 	flag = 0;
-	if (is_sorted(a))
+	if (is_sorted(a, b))
 		return ;
 	if (ft_lstsize(*a) == 5)
 	{
@@ -48,7 +48,7 @@ void	five(t_list **a, t_list **b)
 				rra(a);
 			size--;
 		}
-		if (is_sorted(a))
+		if (is_sorted(a, b))
 			return ;
 		pb(b, a);
 		flag = 1;
@@ -74,7 +74,7 @@ void	four(t_list **a, t_list **b, int flag)
 				rra(a);
 			size--;
 		}
-		if (is_sorted(a))
+		if (is_sorted(a, b))
 			return ;
 		pb(b, a);
 		tree(a);

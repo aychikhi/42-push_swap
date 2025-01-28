@@ -91,7 +91,10 @@ void	read_moves(t_list **a, t_list **b)
 	while (move)
 	{
 		sort_fun(a, b, move);
+		printf("3-> %ld\n", (*a)->n);
 		move = get_next_line(0);
+		printf("4-> %ld\n", (*a)->n);
+
 	}
 	free(move);
 }

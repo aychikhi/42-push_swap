@@ -73,6 +73,7 @@ void	push(t_list **lst_a, t_list **lst_b)
 	t_list	*tmp;
 
 	tmp = NULL;
+	printf("1-> %ld\n", (*lst_a)->n);
 	if (lst_b && *lst_b)
 	{
 		if (!*lst_a)
@@ -90,4 +91,5 @@ void	push(t_list **lst_a, t_list **lst_b)
 			*lst_b = tmp;
 		}
 	}
+	printf("2-> %ld\n", (*lst_a)->n);
 }

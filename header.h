@@ -19,6 +19,7 @@
 
 # include <stdlib.h>
 # include <unistd.h>
+# include <stdio.h>
 
 typedef struct s_list
 {
@@ -45,7 +46,6 @@ void	set_up(char **str);
 long	ft_atoi(char *str);
 void	is_empty(char *str);
 void	rotate(t_list **lst);
-int		is_sorted(t_list **a);
 void	rrotate(t_list **lst);
 void	is_dup(t_list	*lst);
 int		count_word2(char *str);
@@ -72,6 +72,7 @@ void	ft_putchar_fd(char c, int fd);
 void	ft_putendl_fd(char *s, int fd);
 char	*ft_strjoin(char *s1, char *s2);
 char	*ft_strchr(const char *s, int c);
+int		is_sorted(t_list **a, t_list **b);
 char	**ft_split(char const *s, char c);
 char	**ft_split(char const *s, char c);
 void	read_moves(t_list **a, t_list **b);

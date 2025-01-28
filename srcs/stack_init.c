@@ -26,7 +26,7 @@ static void	check(t_list **a, t_list **b)
 		rsort_stack(a, b);
 }
 
-int	is_sorted(t_list **a)
+int	is_sorted(t_list **a, t_list **b)
 {
 	int		size;
 	int		i;

@@ -66,7 +66,7 @@ void	rsort_stack(t_list **a, t_list **b)
 	int	size;
 	int	max;
 
-	if (is_sorted(a))
+	if (is_sorted(a, b))
 		return ;
 	sort_stack(a, b);
 	while (*b)

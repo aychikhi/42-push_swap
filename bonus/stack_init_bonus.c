@@ -12,7 +12,7 @@
 
 #include "../header.h"
 
-int	is_sorted(t_list **a)
+int	is_sorted(t_list **a, t_list **b)
 {
 	int		size;
 	int		i;
@@ -21,6 +21,8 @@ int	is_sorted(t_list **a)
 	tmp = *a;
 	i = 0;
 	size = ft_lstsize(*a);
+	if (ft_lstsize(*b))
+		return (0);
 	while (size - 1 >= i)
 	{
 		if (tmp->index != i)
@@ -37,9 +39,9 @@ static void	free2(t_list **a, t_list **b)
 	ft_lstclear(b);
 }
 
-static void	check_is_sorted(t_list **stack)
+static void	check_is_sorted(t_list **a, t_list **b)
 {
-	if (!is_sorted(stack))
+	if (!is_sorted(a, b))
 		ft_putendl_fd("KO", 1);
 	else
 		ft_putendl_fd("OK", 1);
@@ -86,6 +88,8 @@ void	set_up(char **str)
 	is_dup(stack[0]);
 	get_index(stack[0]);
 	read_moves(&stack[0], &stack[1]);
-	check_is_sorted(&stack[0]);
+	printf("5-> %ld\n", stack[0]->n);
+	check_is_sorted(&stack[0], &stack[1]);
+	printf("6-> %ld\n", stack[0]->n);
 	free2(&stack[0], &stack[1]);
 }
