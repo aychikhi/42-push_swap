@@ -6,7 +6,7 @@
 /*   By: aychikhi <aychikhi@student.42.fr>          +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2025/01/26 17:20:32 by aychikhi          #+#    #+#             */
-/*   Updated: 2025/01/27 17:41:21 by aychikhi         ###   ########.fr       */
+/*   Updated: 2025/01/28 13:43:02 by aychikhi         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -88,8 +88,6 @@ void	set_up(char **str)
 	is_dup(stack[0]);
 	get_index(stack[0]);
 	read_moves(&stack[0], &stack[1]);
-	printf("5-> %ld\n", stack[0]->n);
 	check_is_sorted(&stack[0], &stack[1]);
-	printf("6-> %ld\n", stack[0]->n);
 	free2(&stack[0], &stack[1]);
 }

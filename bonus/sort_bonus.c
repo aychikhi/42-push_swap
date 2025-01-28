@@ -6,7 +6,7 @@
 /*   By: aychikhi <aychikhi@student.42.fr>          +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2025/01/26 18:01:11 by aychikhi          #+#    #+#             */
-/*   Updated: 2025/01/27 12:29:23 by aychikhi         ###   ########.fr       */
+/*   Updated: 2025/01/28 13:32:32 by aychikhi         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -91,10 +91,7 @@ void	read_moves(t_list **a, t_list **b)
 	while (move)
 	{
 		sort_fun(a, b, move);
-		printf("3-> %ld\n", (*a)->n);
 		move = get_next_line(0);
-		printf("4-> %ld\n", (*a)->n);
-
 	}
 	free(move);
 }

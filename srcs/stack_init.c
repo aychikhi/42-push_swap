@@ -6,7 +6,7 @@
 /*   By: aychikhi <aychikhi@student.42.fr>          +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2025/01/22 15:25:54 by aychikhi          #+#    #+#             */
-/*   Updated: 2025/01/27 15:37:27 by aychikhi         ###   ########.fr       */
+/*   Updated: 2025/01/28 13:48:19 by aychikhi         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -32,6 +32,7 @@ int	is_sorted(t_list **a, t_list **b)
 	int		i;
 	t_list	*tmp;
 
+	(void)b;
 	tmp = *a;
 	i = 0;
 	size = ft_lstsize(*a);

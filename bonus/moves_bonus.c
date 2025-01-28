@@ -6,7 +6,7 @@
 /*   By: aychikhi <aychikhi@student.42.fr>          +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2025/01/26 18:35:32 by aychikhi          #+#    #+#             */
-/*   Updated: 2025/01/27 12:28:32 by aychikhi         ###   ########.fr       */
+/*   Updated: 2025/01/28 11:57:40 by aychikhi         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -73,7 +73,6 @@ void	push(t_list **lst_a, t_list **lst_b)
 	t_list	*tmp;
 
 	tmp = NULL;
-	printf("1-> %ld\n", (*lst_a)->n);
 	if (lst_b && *lst_b)
 	{
 		if (!*lst_a)
@@ -91,5 +90,4 @@ void	push(t_list **lst_a, t_list **lst_b)
 			*lst_b = tmp;
 		}
 	}
-	printf("2-> %ld\n", (*lst_a)->n);
 }
