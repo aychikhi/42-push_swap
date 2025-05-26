@@ -25,7 +25,7 @@ $(NAME) : $(OBJ)
 bonus: $(OBJB)
 	$(CC) $(CFLAGS) $(OBJB) -o $(BONUS)
 
-%.o: %.c header.h
+%.o: %.c push_swap.h
 	$(CC) $(CFLAGS) -c $< -o $@
 
 clean:
