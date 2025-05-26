@@ -6,11 +6,11 @@
 /*   By: aychikhi <aychikhi@student.42.fr>          +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2025/01/21 15:01:06 by aychikhi          #+#    #+#             */
-/*   Updated: 2025/01/27 12:29:11 by aychikhi         ###   ########.fr       */
+/*   Updated: 2025/05/26 09:43:58 by aychikhi         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
-#include "../header.h"
+#include "../push_swap.h"
 
 void	swap(t_list **lst)
 {

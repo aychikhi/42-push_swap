@@ -6,11 +6,11 @@
 /*   By: aychikhi <aychikhi@student.42.fr>          +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2025/01/22 17:35:03 by aychikhi          #+#    #+#             */
-/*   Updated: 2025/01/25 13:31:56 by aychikhi         ###   ########.fr       */
+/*   Updated: 2025/05/26 09:44:12 by aychikhi         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
-#include "../header.h"
+#include "../push_swap.h"
 
 static int	small_pos(t_list *a, int flag)
 {

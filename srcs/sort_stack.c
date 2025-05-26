@@ -6,11 +6,11 @@
 /*   By: aychikhi <aychikhi@student.42.fr>          +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2025/01/26 11:20:20 by aychikhi          #+#    #+#             */
-/*   Updated: 2025/01/26 11:54:29 by aychikhi         ###   ########.fr       */
+/*   Updated: 2025/05/26 09:44:10 by aychikhi         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
-#include "../header.h"
+#include "../push_swap.h"
 
 static int	get_pos(t_list *lst, int n)
 {

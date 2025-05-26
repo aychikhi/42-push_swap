@@ -6,11 +6,11 @@
 /*   By: aychikhi <aychikhi@student.42.fr>          +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2025/01/22 15:25:54 by aychikhi          #+#    #+#             */
-/*   Updated: 2025/01/28 13:48:19 by aychikhi         ###   ########.fr       */
+/*   Updated: 2025/05/26 09:44:15 by aychikhi         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
-#include "../header.h"
+#include "../push_swap.h"
 
 static void	check(t_list **a, t_list **b)
 {

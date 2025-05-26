@@ -6,11 +6,11 @@
 /*   By: aychikhi <aychikhi@student.42.fr>          +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2025/01/27 12:22:42 by aychikhi          #+#    #+#             */
-/*   Updated: 2025/01/27 17:52:01 by aychikhi         ###   ########.fr       */
+/*   Updated: 2025/05/26 09:44:22 by aychikhi         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
-#include "../header.h"
+#include "../push_swap.h"
 
 int	count_word2(char *str)
 {

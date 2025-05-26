@@ -6,11 +6,11 @@
 /*   By: aychikhi <aychikhi@student.42.fr>          +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2025/01/27 17:48:37 by aychikhi          #+#    #+#             */
-/*   Updated: 2025/01/27 18:24:41 by aychikhi         ###   ########.fr       */
+/*   Updated: 2025/05/26 09:43:54 by aychikhi         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
-#include "../header.h"
+#include "../push_swap.h"
 
 void	is_empty(char *str)
 {
