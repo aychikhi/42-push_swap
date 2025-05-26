@@ -6,11 +6,11 @@
 /*   By: aychikhi <aychikhi@student.42.fr>          +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2025/01/20 17:38:32 by aychikhi          #+#    #+#             */
-/*   Updated: 2025/01/28 13:41:23 by aychikhi         ###   ########.fr       */
+/*   Updated: 2025/05/26 09:40:37 by aychikhi         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
-#include "header.h"
+#include "push_swap.h"
 
 static int	join_arg2(char **arg, char **str, int i)
 {
