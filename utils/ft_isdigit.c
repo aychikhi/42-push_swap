@@ -6,11 +6,11 @@
 /*   By: aychikhi <aychikhi@student.42.fr>          +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2025/01/20 13:18:13 by aychikhi          #+#    #+#             */
-/*   Updated: 2025/01/26 19:44:15 by aychikhi         ###   ########.fr       */
+/*   Updated: 2025/05/26 09:42:21 by aychikhi         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
-#include "../header.h"
+#include "../push_swap.h"
 
 int	ft_isdigit(int c)
 {

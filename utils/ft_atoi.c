@@ -6,11 +6,11 @@
 /*   By: aychikhi <aychikhi@student.42.fr>          +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2024/10/28 15:58:48 by aychikhi          #+#    #+#             */
-/*   Updated: 2025/01/27 17:43:34 by aychikhi         ###   ########.fr       */
+/*   Updated: 2025/05/26 09:42:15 by aychikhi         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
-#include "../header.h"
+#include "../push_swap.h"
 
 long	ft_atoi(char *str)
 {

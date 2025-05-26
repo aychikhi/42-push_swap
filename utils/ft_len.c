@@ -6,11 +6,11 @@
 /*   By: aychikhi <aychikhi@student.42.fr>          +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2025/01/27 12:36:17 by aychikhi          #+#    #+#             */
-/*   Updated: 2025/01/27 12:37:26 by aychikhi         ###   ########.fr       */
+/*   Updated: 2025/05/26 09:42:27 by aychikhi         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
-#include "../header.h"
+#include "../push_swap.h"
 
 size_t	ft_len(const char *str)
 {

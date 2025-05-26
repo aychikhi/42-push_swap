@@ -6,11 +6,11 @@
 /*   By: aychikhi <aychikhi@student.42.fr>          +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2024/11/04 15:32:25 by aychikhi          #+#    #+#             */
-/*   Updated: 2025/01/26 19:44:18 by aychikhi         ###   ########.fr       */
+/*   Updated: 2025/05/26 09:42:32 by aychikhi         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
-#include "../header.h"
+#include "../push_swap.h"
 
 void	ft_lstadd_front(t_list **lst, t_list *new)
 {

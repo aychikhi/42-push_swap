@@ -6,11 +6,11 @@
 /*   By: aychikhi <aychikhi@student.42.fr>          +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2025/01/24 17:03:24 by aychikhi          #+#    #+#             */
-/*   Updated: 2025/01/26 19:44:33 by aychikhi         ###   ########.fr       */
+/*   Updated: 2025/05/26 09:42:35 by aychikhi         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
-#include "../header.h"
+#include "../push_swap.h"
 
 static void	ft_lstdelone(t_list *lst)
 {
