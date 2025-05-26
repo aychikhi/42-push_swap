@@ -6,11 +6,11 @@
 /*   By: aychikhi <aychikhi@student.42.fr>          +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2024/11/24 15:23:46 by aychikhi          #+#    #+#             */
-/*   Updated: 2025/01/27 12:33:30 by aychikhi         ###   ########.fr       */
+/*   Updated: 2025/05/26 09:44:40 by aychikhi         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
-#include "../header.h"
+#include "../push_swap.h"
 
 char	*ft_strchr(const char *s, int c)
 {

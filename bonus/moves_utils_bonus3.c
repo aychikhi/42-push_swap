@@ -6,11 +6,11 @@
 /*   By: aychikhi <aychikhi@student.42.fr>          +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2025/01/26 18:52:11 by aychikhi          #+#    #+#             */
-/*   Updated: 2025/01/26 20:11:25 by aychikhi         ###   ########.fr       */
+/*   Updated: 2025/05/26 09:44:51 by aychikhi         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
-#include "../header.h"
+#include "../push_swap.h"
 
 void	sa(t_list **a)
 {

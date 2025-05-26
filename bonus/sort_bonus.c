@@ -6,11 +6,11 @@
 /*   By: aychikhi <aychikhi@student.42.fr>          +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2025/01/26 18:01:11 by aychikhi          #+#    #+#             */
-/*   Updated: 2025/01/28 13:32:32 by aychikhi         ###   ########.fr       */
+/*   Updated: 2025/05/26 09:44:49 by aychikhi         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
-#include "../header.h"
+#include "../push_swap.h"
 
 void	error_mess(void)
 {

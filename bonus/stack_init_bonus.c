@@ -6,11 +6,11 @@
 /*   By: aychikhi <aychikhi@student.42.fr>          +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2025/01/26 17:20:32 by aychikhi          #+#    #+#             */
-/*   Updated: 2025/01/28 13:43:02 by aychikhi         ###   ########.fr       */
+/*   Updated: 2025/05/26 09:44:54 by aychikhi         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
-#include "../header.h"
+#include "../push_swap.h"
 
 int	is_sorted(t_list **a, t_list **b)
 {
