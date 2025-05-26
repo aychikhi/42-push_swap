@@ -6,11 +6,11 @@
 /*   By: aychikhi <aychikhi@student.42.fr>          +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2025/01/20 15:46:07 by aychikhi          #+#    #+#             */
-/*   Updated: 2025/01/26 19:44:59 by aychikhi         ###   ########.fr       */
+/*   Updated: 2025/05/26 09:43:30 by aychikhi         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
-#include "../header.h"
+#include "../push_swap.h"
 
 static int	skip(unsigned char *str)
 {

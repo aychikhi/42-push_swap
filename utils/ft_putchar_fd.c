@@ -6,11 +6,11 @@
 /*   By: aychikhi <aychikhi@student.42.fr>          +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2025/01/20 15:22:33 by aychikhi          #+#    #+#             */
-/*   Updated: 2025/01/26 19:44:46 by aychikhi         ###   ########.fr       */
+/*   Updated: 2025/05/26 09:43:19 by aychikhi         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
-#include "../header.h"
+#include "../push_swap.h"
 
 void	ft_putchar_fd(char c, int fd)
 {

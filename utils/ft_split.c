@@ -6,11 +6,11 @@
 /*   By: aychikhi <aychikhi@student.42.fr>          +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2025/01/27 15:51:11 by aychikhi          #+#    #+#             */
-/*   Updated: 2025/01/27 17:43:45 by aychikhi         ###   ########.fr       */
+/*   Updated: 2025/05/26 09:43:26 by aychikhi         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
-#include "../header.h"
+#include "../push_swap.h"
 
 static int	count(const char *str, char c)
 {
